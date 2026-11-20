@@ -1,0 +1,35 @@
+[package]
+name = "nxm-logging"
+version = "0.2.0"
+edition = "2021"
+license = "MIT"
+description = "Shared structured logging for the NXM platform"
+
+[dependencies]
+thiserror = "2"
+tracing = "0.1"
+tracing-appender = "0.2"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+dirs = "5"
+
+[profile.dev]
+opt-level = 0
+debug = "line-tables-only"
+incremental = true
+
+[profile.dev.package."*"]
+opt-level = 2
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = "symbols"
+
+[profile.profiling]
+inherits = "release"
+debug = true
+strip = false
+
+[profile.bench]
+debug = 1
