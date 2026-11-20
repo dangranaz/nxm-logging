@@ -12,6 +12,13 @@
 
 <br>
 
+<picture>
+  <source srcset="docs/assets/nexum-banner.webp" type="image/webp">
+  <img src="docs/assets/nexum-banner.png" alt="Nexum-AI banner" width="1000" height="553">
+</picture>
+
+<br>
+
 `nxm-logging` is a Rust library providing shared structured logging for the NXM platform: environment-aware log levels, rotating file output, JSON formatting, and filter resolution from environment variables.
 
 - **Repo:** shared structured logging library for the NXM platform
