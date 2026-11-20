@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Rust](https://img.shields.io/badge/Rust-1.75%2B-000000?logo=rust&logoColor=white)](https://www.rust-lang.org)
 [![Tracing](https://img.shields.io/badge/tracing-0.3-000000?logo=rust&logoColor=white)](https://docs.rs/tracing)
-[![Version](https://img.shields.io/badge/version-0.2.0-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.3.0-blue)](CHANGELOG.md)
 
 **Shared structured logging for the NXM platform**
 
